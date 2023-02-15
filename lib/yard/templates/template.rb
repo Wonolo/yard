@@ -265,7 +265,7 @@ module YARD
               subsection_index += 1
               value
             end
-            out << (value || "")
+            out << (value.to_s || "")
             break if break_first
           end
         end
