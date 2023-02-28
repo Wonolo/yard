@@ -67,8 +67,10 @@ module YARD
       # @param [String] path the path prefix for a base path URI
       # @return [String] the base URI for a library with an extra +path+ prefix
       def base_path(path)
+        return path if @single_library
+
         libname = router.request.version_supplied ? @library.to_s : @library.name
-        path + (@single_library ? '' : "/#{libname}")
+        path + "/#{libname}"
       end
 
       # @return [Router] convenience method for accessing the router
