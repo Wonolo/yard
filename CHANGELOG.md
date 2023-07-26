@@ -1,5 +1,46 @@
 # main
 
+# [0.9.34] - April 12nd, 2023
+
+[0.9.34]: https://github.com/lsegal/yard/compare/v0.9.33...v0.9.34
+
+- Add changelog to yard.gemspec
+- Fix fork behavior in `yard server --fork`
+
+# [0.9.33] - April 11st, 2023
+
+[0.9.33]: https://github.com/lsegal/yard/compare/v0.9.32...v0.9.33
+
+- Ensure .yardopts is present in gem package (internal YARD documentation change)
+
+# 0.9.32 - April 9th, 2023
+
+[0.9.32]: https://github.com/lsegal/yard/compare/v0.9.31...v0.9.32
+
+- Fix issue with custom Rack::Request attributes in `yard server`
+
+# [0.9.31] - April 9th, 2023
+
+[0.9.31]: https://github.com/lsegal/yard/compare/v0.9.30...v0.9.31
+
+- Remove dependency on webrick in YARD::Server::Commands::StaticFileHelpers
+
+# [0.9.30] - April 9th, 2023
+
+[0.9.30]: https://github.com/lsegal/yard/compare/v0.9.29...v0.9.30
+
+- Hot release fix to correct issue with gem packaging missing templates (#1490)
+
+# [0.9.29] - April 8th, 2023
+
+[0.9.29]: https://github.com/lsegal/yard/compare/v0.9.28...v0.9.29
+
+- Enable table support for CommonMarker (#1443)
+- Parser performance improvements (#1452, #1453, #1454, #1455)
+- Fix autoload of RipperParser (#1460)
+- Remove dependency on webrick for better Ruby 3.1+ support
+- Improvements for mixin resolution (#1467, #1468)
+
 # [0.9.28] - June 1st, 2022
 
 [0.9.28]: https://github.com/lsegal/yard/compare/v0.9.27...v0.9.28
